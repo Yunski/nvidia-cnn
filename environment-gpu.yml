@@ -1,0 +1,24 @@
+name: nvidia-cnn
+channels:
+    - https://conda.anaconda.org/menpo
+    - conda-forge
+dependencies:
+    - python==3.5.4
+    - numpy
+    - matplotlib
+    - jupyter
+    - opencv3
+    - pillow
+    - scikit-learn
+    - scikit-image
+    - scipy
+    - h5py
+    - eventlet
+    - flask-socketio
+    - seaborn
+    - pandas
+    - imageio
+    - pip:
+        - moviepy
+        - tensorflow-gpu==1.3
+        - asyncio
