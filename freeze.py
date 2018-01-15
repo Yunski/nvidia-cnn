@@ -41,9 +41,9 @@ def freeze_graph(model_folder, file_name, output_node_names):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-m", type=str, help="export destination folder", default='saved_models/track1')
-    parser.add_argument("-f", nargs='?', const=1, default='model', type=str, help="name of exported .pb")
-    parser.add_argument("-o", nargs='?', const=1, default='output', type=str, help="names of output nodes; separate with commas if multiple output nodes")
+    parser.add_argument("-m", dest="model_folder", type=str, help="export destination folder", default='saved_models/track1')
+    parser.add_argument("-f", dest="model_filename", nargs='?', const=1, default='model', type=str, help="name of exported .pb")
+    parser.add_argument("-o", dest="output_node_names", nargs='?', const=1, default='output', type=str, help="names of output nodes; separate with commas if multiple output nodes")
     args = parser.parse_args()
 
     if not os.path.exists(args.model_folder):

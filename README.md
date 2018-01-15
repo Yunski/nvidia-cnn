@@ -12,10 +12,10 @@ First, you will need [anaconda](https://www.continuum.io/downloads) or [minicond
 
 ```python
 # Use TensorFlow with CPU
-conda env create -f environments.yml 
+conda env create -f environment.yml 
 
 # Use TensorFlow with GPU
-conda env create -f environments-gpu.yml
+conda env create -f environment-gpu.yml
 ```
 
 ### Run the pretrained model
